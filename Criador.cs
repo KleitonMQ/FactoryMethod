@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod
 {
-    internal class Criador
+    public abstract class Criador
     {
+        public abstract Produto CriarProduto();
     }
 }

@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod
 {
-    internal class CriadorEletronico
+    internal class CriadorEletronico : Criador
     {
+        public override Produto CriarProduto()
+        {
+            Console.WriteLine("Criando produto do tipo Eletronico");
+            return new Eletronico();
+        }
     }
 }
